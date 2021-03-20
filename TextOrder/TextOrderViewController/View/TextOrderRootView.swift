@@ -7,16 +7,6 @@
 
 import UIKit
 
-final class StateHighlightingButton: UIButton {
-	override var isEnabled: Bool {
-		didSet {
-			super.isEnabled = self.isEnabled
-			
-			self.alpha = self.isEnabled ? 1 : 0.4
-		}
-	}
-}
-
 final class TextOrderRootView: UIView {
 	let closeButton = UIButton.iconButton(with: SFSymbols.close.image)
 	

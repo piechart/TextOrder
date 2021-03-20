@@ -14,7 +14,7 @@ final class TilesBar: UIView {
 	}
 	
 	var isFilled: Bool {
-		self.tiles.allSatisfy({ !$0.viewModel.value.isEmpty })
+		self.tiles.allSatisfy({ !$0.viewModel.isEmpty })
 	}
 	
 	var tileWidth: CGFloat {
@@ -53,7 +53,7 @@ final class TilesBar: UIView {
 	
 	func updateIntersecting(by view: UIView, with viewModel: TileViewModel) -> Int? {
 		let tile: TileView? = self.tiles
-			.filter { $0.viewModel.value.isEmpty }
+			.filter { $0.viewModel.isEmpty }
 			.map { ($0, self.convert($0.frame, to: nil).intersectionPercentage(view.frame)) }
 			.filter { $0.1 > 0.3 } // must intersect for at least 30% by its frame to be counted
 			.sorted(by: { $0.1 < $1.1 })

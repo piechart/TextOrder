@@ -62,7 +62,7 @@ private extension TextOrderViewController {
 	}
 	
 	func userTileTapped(tap: UITapGestureRecognizer) {
-		guard let tileView = tap.view as? TileView, !tileView.viewModel.value.isEmpty else {
+		guard let tileView = tap.view as? TileView, !tileView.viewModel.isEmpty else {
 			return
 		}
 		
@@ -78,7 +78,7 @@ private extension TextOrderViewController {
 	}
 	
 	func targetTilePanned(pan: UIPanGestureRecognizer) {
-		guard let originTileView = pan.view as? TileView, !originTileView.viewModel.value.isEmpty else {
+		guard let originTileView = pan.view as? TileView, !originTileView.viewModel.isEmpty else {
 			return
 		}
 		if pan.state == .began {

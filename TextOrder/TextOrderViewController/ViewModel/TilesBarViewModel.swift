@@ -43,7 +43,7 @@ final class TilesBarViewModelImpl: TilesBarViewModel {
 	}
 	
 	func update(viewModel: TileViewModel) -> Int? {
-		if let index = self.tilesViewModels.firstIndex(where: { $0.value.isEmpty }) {
+		if let index = self.tilesViewModels.firstIndex(where: { $0.isEmpty }) {
 			self.tilesViewModels[index] = viewModel
 			return index
 		}

@@ -32,7 +32,7 @@ final class TextOrderViewModelImpl: TextOrderViewModel {
 	}()
 	
 	lazy var userTilesViewModel: TilesBarViewModel = {
-		let emptyViewModels = Array(repeating: TileViewModelImpl(value: ""), count: self.validWordsOrder.count)
+		let emptyViewModels = Array(repeating: self.makeEmptyTileViewModel(), count: self.validWordsOrder.count)
 		return TilesBarViewModelImpl(tilesViewModels: emptyViewModels)
 	}()
 	

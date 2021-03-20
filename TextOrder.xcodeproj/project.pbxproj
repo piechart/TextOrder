@@ -27,6 +27,7 @@
 		18753B112605F5400045108C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18753B102605F5400045108C /* ViewModel.swift */; };
 		18753B142605F54B0045108C /* TextOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18753B132605F54B0045108C /* TextOrderViewModel.swift */; };
 		18753B1D2605FE740045108C /* TilesBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18753B1C2605FE740045108C /* TilesBarViewModel.swift */; };
+		188A56AE260601E600DDC0A1 /* StateHighlightingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188A56AD260601E600DDC0A1 /* StateHighlightingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		18753B102605F5400045108C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		18753B132605F54B0045108C /* TextOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOrderViewModel.swift; sourceTree = "<group>"; };
 		18753B1C2605FE740045108C /* TilesBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TilesBarViewModel.swift; sourceTree = "<group>"; };
+		188A56AD260601E600DDC0A1 /* StateHighlightingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateHighlightingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				18753ACA2605297A0045108C /* TileView.swift */,
 				18753ACD260529870045108C /* TilesBar.swift */,
 				18753AC126051BBE0045108C /* ProgressView.swift */,
+				188A56AD260601E600DDC0A1 /* StateHighlightingButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				1834639C2605104E004489D4 /* AppDelegate.swift in Sources */,
 				18753B0726053F340045108C /* CGRect+Helpers.swift in Sources */,
 				18753B142605F54B0045108C /* TextOrderViewModel.swift in Sources */,
+				188A56AE260601E600DDC0A1 /* StateHighlightingButton.swift in Sources */,
 				18753AD1260529980045108C /* TileViewModel.swift in Sources */,
 				18753ABF26051BA10045108C /* UIButton+Helpers.swift in Sources */,
 			);
